@@ -42,6 +42,67 @@
       color: #856404;
       display: inline-block;
     }
+
+    .main-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  background-color: #222;
+  color: white;
+  font-family: 'Poppins', Arial, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 60px; /* wysokość półpaska */
+}
+
+.menu-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.menu-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.menu-right {
+  display: flex;
+  gap: 25px;
+}
+
+.menu-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.menu-link:hover {
+  color: #e91e63;
+  text-decoration: underline;
+}
+
+/* Responsywność na małe ekrany */
+@media (max-width: 600px) {
+  .main-menu {
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+  }
+  .menu-right {
+    gap: 15px;
+  }
+}
   </style>
 </head>
 <body>
