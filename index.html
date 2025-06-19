@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wiadomości - Kostkowe Radio</title>
+  <link rel="stylesheet" href="../style.css?v=3" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="../icon.png" type="image/png" />
+  <style>
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+      font-family: 'Poppins', Arial, sans-serif;
+    }
+
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .news-card {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      background-color: #fff;
+      transition: transform 0.2s ease;
+    }
+
+    .news-card:hover {
+      transform: scale(1.02);
+    }
+
+    .news-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .news-date {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 4px 8px;
+      font-size: 0.85rem;
+      border-radius: 6px;
+    }
+
+    .news-title {
+      padding: 15px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    a.news-link {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="main-menu">
+    <div class="menu-left">
+      <img src="../icon.png" alt="Logo Kostkowe Radio" class="menu-logo" />
+      <span class="menu-title">Kostkowe Radio</span>
+    </div>
+    <nav class="menu-right">
+      <a href="../wiadomosci/index.html" class="menu-link">Wiadomości</a>
+      <a href="../ramowka/index.html" class="menu-link">Ramówka</a>
+      <a href="../informacje/index.html" class="menu-link">Informacje</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Wiadomości</h2>
+    <section class="news-grid">
+
+      <!-- Przykładowa wiadomość -->
+      <a href="testowa-wiadomosc.html" class="news-link">
+        <div class="news-card">
+          <img src="https://kostkoweradio.github.io/strona-glowna/news1.jpg" alt="Testowa wiadomość" />
+          <div class="news-date">19 cze 2025</div>
+          <div class="news-title">🎤 Start testowych wiadomości w Kostkowym Radiu</div>
+        </div>
+      </a>
+
+      <!-- Dodaj kolejne wiadomości tu -->
+      <!--
+      <a href="kolejna.html" class="news-link">
+        <div class="news-card">
+          <img src="LINK_DO_OBRAZKA" alt="Tytuł" />
+          <div class="news-date">DATA</div>
+          <div class="news-title">TYTUŁ</div>
+        </div>
+      </a>
+      -->
+
+    </section>
+  </main>
+
+</body>
+</html>
